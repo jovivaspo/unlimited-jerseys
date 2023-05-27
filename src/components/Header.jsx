@@ -2,23 +2,23 @@ import { CarouselHeader } from './CarouselHeader'
 
 const images = [
   {
-    src: './src/assets/banner-principal.jpg',
+    src: './banner-principal.jpg',
     alt: 'Banner Unlimited Jerseys'
   },
   {
-    src: './src/assets/banner-temporada-22-23.jpg',
+    src: './banner-temporada-22-23.jpg',
     alt: 'Banner Temporada 22-23'
   },
   {
-    src: './src/assets/banner-nueva-temporada.jpg',
+    src: './banner-nueva-temporada.jpg',
     alt: 'Banner Nueva Temporada'
   },
   {
-    src: './src/assets/banner-retro.jpg',
+    src: './banner-retro.jpg',
     alt: 'Banner Retro'
   },
   {
-    src: './src/assets/banner-nba.jpg',
+    src: './banner-nba.jpg',
     alt: 'Banner NBA'
   }
 ]
