@@ -1,8 +1,10 @@
 import { Catalogo } from './components/Catalogo'
 import { Contacto } from './components/Contacto'
+import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Navbar } from './components/Navbar'
 import { Pedido } from './components/Pedido'
+import { Whatsapp } from './components/Whatsapp'
 
 const items = [
   {
@@ -41,6 +43,8 @@ function App () {
         <Catalogo items={items}/>
         <Pedido/>
         <Contacto/>
+        <Whatsapp/>
+        <Footer/>
       </main>
     </>
   )
