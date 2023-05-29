@@ -39,13 +39,12 @@ export const Form = () => {
   // console.log(form);
   return (
 
-      <form id='formulario' className='w-9/10 md:w-[380px]  min-h-[480px] rounded-2xl p-8 mx-auto my-16  flex flex-col justify-around gap-5 bg-black'>
-        <img src='./logo.svg' alt="logo Unlimited Jerseys" className='w-[64px] mx-auto'/>
-        <div className="flex flex-col gap-5">
-          <label htmlFor="email" className='text-yellow'>Email</label>
+      <form id='formulario' className='flex flex-col justify-center items-center w-full gap-8'>
+        <div className="flex flex-col gap-5  w-[90%] md:max-w-[680px]">
+          <label htmlFor="email" >Email</label>
           <input
           autoComplete='off'
-            className='bg-transparent border-b border-yellow focus:outline-none text-sm'
+            className='bg-white focus:outline-none text-sm w-full p-4'
             type="email"
             name="email"
             onChange={handlerChange}
@@ -53,10 +52,10 @@ export const Form = () => {
             placeholder='example@gmail.com'
           />
         </div>
-        <div className="flex flex-col gap-5">
-          <label htmlFor="message" className='text-yellow'>Mensaje</label>
+        <div className="flex flex-col gap-5  w-[90%] md:max-w-[680px]">
+          <label htmlFor="message">Mensaje</label>
           <textarea
-          className='bg-transparent border-b border-yellow text-sm  w-full p-4 focus:outline-none'
+          className='bg-white text-sm  w-full focus:outline-none p-4'
             name="message"
             id="message"
             onChange={handlerChange}
@@ -64,7 +63,7 @@ export const Form = () => {
             placeholder='En qué podemos ayudarte'
           ></textarea>
           <button onClick={handlerSubmit}
-          className="mx-auto my-8  w-[120px] px-4 py-2 flex justify-center border border-yellow text-yellow font-bold rounded-2xl hover:bg-yellow hover:text-black transition duration-200"
+          className="mx-auto my-8 w-[120px] px-4 py-2 flex justify-center border border-black  font-bold rounded-2xl hover:bg-black hover:text-white transition duration-200"
           >Enviar</button>
         </div>
       </form>

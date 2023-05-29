@@ -2,23 +2,23 @@ import { CarouselHeader } from './CarouselHeader'
 
 const images = [
   {
-    src: './banner-principal.jpg',
+    src: ['./banner-principal.jpg', './banner-principal-movil.jpg'],
     alt: 'Banner Unlimited Jerseys'
   },
   {
-    src: './banner-temporada-22-23.jpg',
+    src: ['./banner-temporada-22-23.jpg', './banner-temporada-22-23-movil.jpg'],
     alt: 'Banner Temporada 22-23'
   },
   {
-    src: './banner-nueva-temporada.jpg',
+    src: ['./banner-nueva-temporada.jpg', './banner-nueva-temporada-movil.jpg'],
     alt: 'Banner Nueva Temporada'
   },
   {
-    src: './banner-retro.jpg',
+    src: ['./banner-retro.jpg', './banner-retro-movil.jpg'],
     alt: 'Banner Retro'
   },
   {
-    src: './banner-nba.jpg',
+    src: ['./banner-nba.jpg', './banner-nba-movil.jpg'],
     alt: 'Banner NBA'
   }
 ]
@@ -26,8 +26,8 @@ const images = [
 export const Header = () => {
   return (
     <header className="w-full">
-        <div className="w-full p-2 bg-black flex justify-center items-center">
-            <p className="text-white  text-center  text-xs">Descuento en camistas temporada 22-23</p>
+        <div className="w-full p-2 bg-yellow flex flex-col justify-center items-center">
+            <p className="text-black  text-center  text-sm font-bold">Descuento en camistas temporada 22-23</p>
         </div>
         <CarouselHeader items={images}/>
     </header>
