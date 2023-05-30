@@ -9,12 +9,24 @@ export const CarouselHeader = ({ items }) => {
       {
         items.map((item, index) => {
           return (
-            <div className="w-auto h-[800px] sm:h-auto mb-8 md:mb-24" key={index}>
+            <div className="w-auto h-[700px] sm:h-auto mb-8 md:mb-24" key={index}>
+              {
+                item.link
+
+                  ? (<a className='w-full h-full block' href={item.link} target='_blank' rel="noreferrer">
                 <img srcSet={`${item.src[1]} 640w, ${item.src[0]}`}
-                  sizes="(max-width: 640px) 640px"
+                 sizes="(max-width: 640px) 640px"
                  src={item.src[0]}
                  alt={item.alt}
                  className="w-full h-auto object-cover"/>
+              </a>)
+                  : (<img srcSet={`${item.src[1]} 640w, ${item.src[0]}`}
+                 sizes="(max-width: 640px) 640px"
+                 src={item.src[0]}
+                 alt={item.alt}
+                 className="w-full h-auto object-cover"/>)
+              }
+
             </div>
           )
         })

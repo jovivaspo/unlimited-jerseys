@@ -2,24 +2,32 @@ import { CarouselHeader } from './CarouselHeader'
 
 const images = [
   {
-    src: ['./banner-principal.jpg', './banner-principal-movil.jpg'],
+    src: ['https://res.cloudinary.com/dkhppc0r9/image/upload/f_auto/v1685458326/banner-principal_rwvfqx.jpg', 'https://res.cloudinary.com/dkhppc0r9/image/upload/v1685458325/banner-principal-movil_wucbqp.avif'],
     alt: 'Banner Unlimited Jerseys'
   },
   {
-    src: ['./banner-temporada-22-23.jpg', './banner-temporada-22-23-movil.jpg'],
-    alt: 'Banner Temporada 22-23'
+    src: ['https://res.cloudinary.com/dkhppc0r9/image/upload/f_auto/v1685458325/banner-temporada-22-23_sjw8r6.jpg', 'https://res.cloudinary.com/dkhppc0r9/image/upload/v1685458325/banner-temporada-22-23-movil_thnhey.avif'],
+    alt: 'Banner Temporada 22-23',
+    link: 'https://drive.google.com/drive/folders/1aad16Inxs2QUvuZlBHKsKTrWwfvV4ybV'
+
   },
   {
-    src: ['./banner-nueva-temporada.jpg', './banner-nueva-temporada-movil.jpg'],
-    alt: 'Banner Nueva Temporada'
+    src: ['https://res.cloudinary.com/dkhppc0r9/image/upload/f_auto/v1685458325/banner-nueva-temporada_sg0zde.jpg', 'https://res.cloudinary.com/dkhppc0r9/image/upload/v1685458325/banner-nueva-temporada-movil_aw4an2.avif'],
+    alt: 'Banner Nueva Temporada',
+    link: 'https://drive.google.com/drive/folders/1AK-nO3sYuAd7B1FtXvI4riGh3Jie66KM'
+
   },
   {
-    src: ['./banner-retro.jpg', './banner-retro-movil.jpg'],
-    alt: 'Banner Retro'
+    src: ['https://res.cloudinary.com/dkhppc0r9/image/upload/f_auto/v1685458325/banner-retro_ljodla.jpg', 'https://res.cloudinary.com/dkhppc0r9/image/upload/v1685458325/banner-retro-movil_ctkbdo.avif'],
+    alt: 'Banner Retro',
+    link: 'https://drive.google.com/drive/folders/1bCVvEoOnvQEqnCuyAZUOc-TIXbI6V6_0'
+
   },
   {
-    src: ['./banner-nba.jpg', './banner-nba-movil.jpg'],
-    alt: 'Banner NBA'
+    src: ['https://res.cloudinary.com/dkhppc0r9/image/upload/f_auto/v1685458326/banner-nba_i76ykd.jpg', 'https://res.cloudinary.com/dkhppc0r9/image/upload/v1685458326/banner-nba-movil_j0ygpa.avif'],
+    alt: 'Banner NBA',
+    link: 'https://drive.google.com/drive/folders/1KFoNW_pI9jrB0FncckzrzYtHGTbfbIAM'
+
   }
 ]
 

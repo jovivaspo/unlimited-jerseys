@@ -20,7 +20,7 @@ export const Navbar = () => {
         </ul>
         <div className="flex gap-4">
           <a className="hidden md:flex gap-2 items-center" href="https://www.instagram.com/unlimitedjerseys123/"><img width={28} src="./Instagram-black.svg" alt="https://www.instagram.com/unlimitedjerseys123/" /></a>
-          <a className="hidden md:flex gap-2 items-center" href="https://www.instagram.com/unlimitedjerseys123/"><img width={28} src="./Whatsapp-black.svg" alt="https://www.instagram.com/unlimitedjerseys123/" /></a>
+          <a className="hidden md:flex gap-2 items-center" href="https://wa.me/722452544"><img width={28} src="./Whatsapp-black.svg" alt="https://www.instagram.com/unlimitedjerseys123/" /></a>
         </div>
 
     </nav>
