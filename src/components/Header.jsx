@@ -2,7 +2,7 @@ import { CarouselHeader } from './CarouselHeader'
 
 const images = [
   {
-    src: ['https://res.cloudinary.com/dkhppc0r9/image/upload/f_auto/v1685458326/banner-principal_rwvfqx.jpg', 'https://res.cloudinary.com/dkhppc0r9/image/upload/v1685458325/banner-principal-movil_wucbqp.avif'],
+    src: ['./banner-principal.webp', './banner-principal-movil.webp'],
     alt: 'Banner Unlimited Jerseys'
   },
   {
@@ -33,7 +33,7 @@ const images = [
 
 export const Header = () => {
   return (
-    <header className="w-full">
+    <header className="w-full min-[600px]">
         <div className="w-full p-2 bg-yellow flex flex-col justify-center items-center">
             <p className="text-black  text-center  text-sm font-bold">Descuento en camisetas temporada 22-23</p>
         </div>
