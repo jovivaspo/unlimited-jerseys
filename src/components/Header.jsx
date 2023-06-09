@@ -33,7 +33,7 @@ const images = [
 
 export const Header = () => {
   return (
-    <header className="w-full min-[600px]">
+    <header className="w-full">
         <div className="w-full p-2 bg-yellow flex flex-col justify-center items-center">
             <p className="text-black  text-center  text-sm font-bold">Descuento en camisetas temporada 22-23</p>
         </div>

@@ -9,7 +9,7 @@ export const CarouselHeader = ({ items }) => {
       {
         items.map((item, index) => {
           return (
-            <div className="w-auto h-[700px] sm:h-auto mb-8 md:mb-24" key={index}>
+            <div className="w-full h-[700px] bg-yellow mb-8  sm:h-auto sm:min-h-[280px] md:min-h-[336px] md:mb-24 lg:min-h-[450px] xl:min-h-[568px] 2xl:min-h-[760px]" key={index}>
               {
                 item.link
 
