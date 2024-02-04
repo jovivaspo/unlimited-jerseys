@@ -4,10 +4,12 @@ export const ItemsProducts = ({ description, front, back }) => {
   const refImg = useRef(null);
 
   useEffect(() => {
-    if (!refImg?.current) return;
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    if (!refImg?.current || mediaQuery.matches) return;
 
     const mouseHover = () => {
       const $frontImg = refImg.current.querySelector('.front');
+
       if (!$frontImg) return;
       $frontImg.style.opacity = '0';
     };
@@ -22,6 +24,7 @@ export const ItemsProducts = ({ description, front, back }) => {
     refImg.current.addEventListener('mouseleave', mouseLeave);
 
     return () => {
+      if (!refImg?.current) return;
       refImg.current.removeEventListener('mouseover', mouseHover);
       refImg.current.removeEventListener('mouseleave', mouseLeave);
     };

@@ -52,3 +52,12 @@ li{
   border-radius: 20px;       /* roundness of the scroll thumb */
 }
 
+.menu-open{
+  transform: translate(0);
+  overflow-y: hidden;
+}
+
+.menu-close{
+  transform: translate(-100%, 0);
+  overflow-y: auto;
+}

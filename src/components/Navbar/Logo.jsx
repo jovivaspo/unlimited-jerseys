@@ -1,18 +1,14 @@
-import React from "react";
+import React from 'react';
 
-export const Logo = () => {
+export const Logo = ({ size = '80px' }) => {
   return (
-    <div className="w-[80px] h-[80px] cursor-pointer">
+    <div style={{ width: size, height: size }} className=' cursor-pointer'>
       <a
-        href="/
-          "
+        href='/
+          '
       >
-        {" "}
-        <img
-          className="w-full h-full object-cover"
-          src="/Logo.png"
-          alt="logo"
-        />
+        {' '}
+        <img className='w-full h-full object-cover' src='/Logo.png' alt='logo' />
       </a>
     </div>
   );

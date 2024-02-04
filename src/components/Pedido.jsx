@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 
 export const Pedido = () => {
   return (
-    <div id='pedido' className='w-full xl:w-[1000px] mx-auto my-20'>
-      <h2 className='text-4xl font-bold mx-auto mt-8'>PEDIDOS Y DEVOLUCIONES</h2>
+    <div id='pedido' className='w-full xl:w-[1000px] mx-auto my-20 p-2 md:p-0'>
+      <h2 className='text-4xl font-bold mx-auto'>PEDIDOS Y DEVOLUCIONES</h2>
       <section className='my-8 text-sm'>
         <h3 className='mb-4 text-3xl font-bold text-yellow '> ¿Quieres realizar un pedido? Te explicamos cómo hacerlo.</h3>
         <ol>
