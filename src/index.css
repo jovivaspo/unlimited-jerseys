@@ -9,7 +9,7 @@ html{
 
 :root {
   position: relative;
-  font-family: 'Roboto', Helvetica, Inter, system-ui,sans-serif;
+  font-family:Helvetica, Inter, system-ui,sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -28,7 +28,7 @@ body{
   position: relative;
 }
 
-h2, h3{
+h2, h3, .semiTitle{
   font-family: 'Bebas Neue', Inter;
 }
 
@@ -38,5 +38,17 @@ p{
 
 li{
   margin: 1rem 0;
+}
+
+
+.catalogue-scrooll::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+
+
+
+.catalogue-scrooll::-webkit-scrollbar-thumb {
+  background-color: gray;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
 }
 
