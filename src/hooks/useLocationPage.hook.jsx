@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
-const pagesWitoutHeader = ['/pedidos', '/contacto'];
+const pagesWitoutHeader = ['/'];
 
 export const useLocationPage = () => {
   const location = useLocation();
@@ -9,9 +9,9 @@ export const useLocationPage = () => {
 
   useEffect(() => {
     if (pagesWitoutHeader.includes(location.pathname)) {
-      setShowHeader(false);
-    } else {
       setShowHeader(true);
+    } else {
+      setShowHeader(false);
     }
   }, [location]);
 

@@ -87,11 +87,22 @@ export const NavbarMb = () => {
           {menu.map((itemMenu) => {
             return (
               <div key={itemMenu.name} className='cursor-pointer w-full border-b' onClick={() => handlerSubmenu(itemMenu.name)} ref={parent}>
-                <span className='w-full p-4 flex items-center semiTitle text-3xl'> {itemMenu.name}</span>
+                <div className='w-full p-4 flex items-center justify-between semiTitle text-3xl'>
+                  <span> {itemMenu.name}</span>
+                  <span className='text-xl text-yellow' onClick={() => onClickMenu(itemMenu.link)}>
+                    Ver sección
+                  </span>
+                </div>
                 {subMenuIsOpen === itemMenu.name && (
                   <ul className='w-full flex flex-col px-4 pb-4 gap-4 animate-fade-down'>
                     {itemMenu?.items?.map((el) => {
-                      return <li className='m-0 semiTitle px-2'>{el.name?.toUpperCase()}</li>;
+                      return (
+                        <li key={el.name} className='m-0 semiTitle px-2'>
+                          <a href={el.link} target='_blank'>
+                            {el.name?.toUpperCase()}
+                          </a>
+                        </li>
+                      );
                     })}
                   </ul>
                 )}
@@ -101,10 +112,10 @@ export const NavbarMb = () => {
         </div>
 
         <div className=' w-full flex flex-col gap-10 p-4 semiTitle mt-auto mb-8'>
-          {otherLinks.map((item) => {
+          {otherLinks.map((item, index) => {
             return (
               <span
-                key={item.name}
+                key={index}
                 className='text-2xl'
                 onClick={() => {
                   onClickMenu(item.link);
