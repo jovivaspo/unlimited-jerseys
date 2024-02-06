@@ -47,11 +47,13 @@ export const Menu = () => {
           <div className='w-screen bg-white absolute top-[68px] h-[340px] left-0 z-40 flex justify-around py-8'>
             {menuIndexado[itemIsHover]?.items?.map((item) => (
               <div className='flex flex-col justify-start items-start'>
-                <a className='font-bold text-sm mb-2 cursor-pointer hover:scale-110 transition-all'>{item.name}</a>
+                <Link to={item.link} target='_blank' className='font-bold text-sm mb-2 cursor-pointer hover:scale-110 transition-all'>
+                  {item.name}
+                </Link>
                 <ul className='max-h-[300px] flex flex-col justify-around items-start h-full flex-wrap py-2'>
                   {item?.items?.map((item) => (
                     <li className='m-0 pr-10 my-2'>
-                      <Link to={item.link} className='text-xs font-bold opacity-70 hover:opacity-100 hover:scale-110 transition-all cursor-pointer flex items-center gap-1'>
+                      <Link target='_blank' to={item.link} className='text-xs font-bold opacity-70 hover:opacity-100 hover:scale-110 transition-all cursor-pointer flex items-center gap-1'>
                         {item.img && <img loading='lazy' className='w-5 h-5 object-cover rounded-[100%]' src={item.img} alt={item.name} />}
                         {item.name}
                       </Link>

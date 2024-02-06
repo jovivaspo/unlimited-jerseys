@@ -15,13 +15,13 @@ export const Others = () => {
             alt='Camisetas selecciones internacionales'
             loading='lazy'
           />
-          <Link className={classLinks} to='https://drive.google.com/drive/u/0/folders/1Seu8p4wPDcdWrH2L2TNKwtiZBmuTdkRE?direction=a'>
+          <Link target='_blank' className={classLinks} to='https://drive.google.com/drive/u/0/folders/1Seu8p4wPDcdWrH2L2TNKwtiZBmuTdkRE?direction=a'>
             Selecciones
           </Link>
         </div>
         <div className='w-full md:w-1/2 flex flex-col gap-4 h-[700px]'>
           <img className='w-full h-full object-cover' src='https://res.cloudinary.com/dstkrmvvx/image/upload/f_auto/v1707043840/cruif_rverfh.jpg' alt='Camisetas retro' loading='lazy' />
-          <Link className={classLinks} to='https://drive.google.com/drive/u/0/folders/1lGfT4fGqCV54PqMk73Y34nCO2EkeGtJV?direction=a'>
+          <Link target='_blank' className={classLinks} to='https://drive.google.com/drive/u/0/folders/1lGfT4fGqCV54PqMk73Y34nCO2EkeGtJV?direction=a'>
             Camisetas Retro
           </Link>
         </div>
