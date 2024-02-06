@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const NotFoundPage = () => {
   return (
@@ -11,7 +12,7 @@ export const NotFoundPage = () => {
           <span class='absolute inset-0 transition-transform translate-x-0.5 translate-y-0.5 bg-yellow group-hover:translate-y-0 group-hover:translate-x-0'></span>
 
           <span class='relative block px-8 py-3 bg-black  border border-current'>
-            <router-link to='/'>Go Home</router-link>
+            <Link to='/'>Go Home</Link>
           </span>
         </a>
       </button>
